@@ -54,6 +54,34 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => 1,
   );
+  
+  $theme['locale-language'] = array(
+    'module' => 'locale',
+    'delta' => 'language',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-main'] = array(
+    'module' => 'system',
+    'delta' => 'main',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
 
   $theme['views-links-block'] = array(
     'module' => 'views',
@@ -115,6 +143,34 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => 1,
   );
+  
+  $theme['locale-language'] = array(
+    'module' => 'locale',
+    'delta' => 'language',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-13',
+    'region' => 'user_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-main'] = array(
+    'module' => 'system',
+    'delta' => 'main',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-7',
+    'region' => 'content',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
 
   $theme['views-links-block'] = array(
     'module' => 'views',
@@ -175,6 +231,34 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'pages' => '',
     'title' => '',
     'cache' => 1,
+  );
+  
+  $theme['locale-language'] = array(
+    'module' => 'locale',
+    'delta' => 'language',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-main'] = array(
+    'module' => 'system',
+    'delta' => 'main',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
   );
 
   $theme['views-links-block'] = array(

@@ -65,7 +65,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Front page';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass;
