@@ -132,6 +132,67 @@ function humanitarianresponse_layout_default_fe_block_settings() {
 
   $export['humanitarianresponse'] = $theme;
 
+  // seven
+  $theme = array();
+
+  $theme['block-contact'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'contact',
+  );
+
+  $theme['block-legal'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'legal',
+  );
+
+  $theme['follow-site'] = array(
+    'module' => 'follow',
+    'delta' => 'site',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => 1,
+  );
+
+  $theme['views-links-block'] = array(
+    'module' => 'views',
+    'delta' => 'links-block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $export['seven'] = $theme;
+
   $theme_default = variable_get('theme_default', 'garland');
   $themes = list_themes();
   foreach ($export as $theme_key => $settings) {
