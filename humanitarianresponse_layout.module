@@ -10,6 +10,7 @@ include_once('humanitarianresponse_layout.features.inc');
  * Implements hook_enable()
  */
 function humanitarianresponse_layout_enable() {
+  variable_set('theme_default', 'humanitarianresponse');
   // Enable the default theme.
   db_update('system')
     ->fields(array('status' => 1))
