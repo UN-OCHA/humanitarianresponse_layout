@@ -65,7 +65,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '',
+    'title' => '<none>',
     'cache' => -1,
   );
 
@@ -80,6 +80,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '',
+    'cache' => -1,
+  );
+  
+  $theme['system-main-menu'] = array(
+    'module' => 'system',
+    'delta' => 'main-menu',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
     'cache' => -1,
   );
 
@@ -154,7 +168,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '',
+    'title' => '<none>',
     'cache' => -1,
   );
 
@@ -169,6 +183,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '',
+    'cache' => -1,
+  );
+  
+  $theme['system-main-menu'] = array(
+    'module' => 'system',
+    'delta' => 'main-menu',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-13',
+    'region' => 'menu',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
     'cache' => -1,
   );
 
@@ -243,7 +271,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '',
+    'title' => '<none>',
     'cache' => -1,
   );
 
@@ -258,6 +286,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '',
+    'cache' => -1,
+  );
+  
+  $theme['system-main-menu'] = array(
+    'module' => 'system',
+    'delta' => 'main-menu',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
     'cache' => -1,
   );
 
