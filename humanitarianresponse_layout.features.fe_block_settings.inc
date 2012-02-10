@@ -68,6 +68,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '<none>',
     'cache' => -1,
   );
+  
+  $theme['logintoboggan-logintoboggan_logged_in'] = array(
+    'module' => 'logintoboggan',
+    'delta' => 'logintoboggan_logged_in',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
 
   $theme['system-main'] = array(
     'module' => 'system',
@@ -86,6 +100,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
   $theme['system-main-menu'] = array(
     'module' => 'system',
     'delta' => 'main-menu',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+  
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
     'theme' => 'bartik',
     'status' => 0,
     'weight' => '0',
@@ -171,6 +199,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '<none>',
     'cache' => -1,
   );
+  
+  $theme['logintoboggan-logintoboggan_logged_in'] = array(
+    'module' => 'logintoboggan',
+    'delta' => 'logintoboggan_logged_in',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-8',
+    'region' => 'user_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
 
   $theme['system-main'] = array(
     'module' => 'system',
@@ -193,6 +235,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'status' => '1',
     'weight' => '-13',
     'region' => 'menu',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+  
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-14',
+    'region' => 'user_second',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
@@ -274,6 +330,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '<none>',
     'cache' => -1,
   );
+  
+  $theme['logintoboggan-logintoboggan_logged_in'] = array(
+    'module' => 'logintoboggan',
+    'delta' => 'logintoboggan_logged_in',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
 
   $theme['system-main'] = array(
     'module' => 'system',
@@ -292,6 +362,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
   $theme['system-main-menu'] = array(
     'module' => 'system',
     'delta' => 'main-menu',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+  
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
     'theme' => 'seven',
     'status' => 0,
     'weight' => '0',
