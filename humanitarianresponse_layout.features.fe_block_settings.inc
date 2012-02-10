@@ -55,8 +55,8 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => 1,
   );
   
-  $theme['locale-language'] = array(
-    'module' => 'locale',
+  $theme['lang_dropdown-language'] = array(
+    'module' => 'lang_dropdown',
     'delta' => 'language',
     'theme' => 'bartik',
     'status' => 0,
@@ -186,8 +186,8 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => 1,
   );
   
-  $theme['locale-language'] = array(
-    'module' => 'locale',
+  $theme['lang_dropdown-language'] = array(
+    'module' => 'lang_dropdown',
     'delta' => 'language',
     'theme' => 'humanitarianresponse',
     'status' => '1',
@@ -317,8 +317,8 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => 1,
   );
   
-  $theme['locale-language'] = array(
-    'module' => 'locale',
+  $theme['lang_dropdown-language'] = array(
+    'module' => 'lang_dropdown',
     'delta' => 'language',
     'theme' => 'seven',
     'status' => 0,
