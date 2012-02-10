@@ -34,7 +34,7 @@ function humanitarianresponse_layout_strongarm() {
     'effects' => array(
       'siblings' => 'close-same-tree',
       'children' => 'none',
-      'remember' => '0',
+      'remember' => 'collapse',
     ),
     'filter' => array(
       'type' => 'blacklist',
