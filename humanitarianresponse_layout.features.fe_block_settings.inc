@@ -22,7 +22,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => 'Contact',
+    'title' => '',
     'cache' => -1,
     'machine_name' => 'contact',
   );
@@ -36,7 +36,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => 'Legal',
+    'title' => '',
     'cache' => -1,
     'machine_name' => 'legal',
   );
@@ -54,7 +54,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => 1,
   );
-  
+
   $theme['lang_dropdown-language'] = array(
     'module' => 'lang_dropdown',
     'delta' => 'language',
@@ -65,10 +65,10 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['logintoboggan-logintoboggan_logged_in'] = array(
     'module' => 'logintoboggan',
     'delta' => 'logintoboggan_logged_in',
@@ -79,7 +79,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
 
@@ -96,7 +96,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['system-main-menu'] = array(
     'module' => 'system',
     'delta' => 'main-menu',
@@ -107,10 +107,10 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['user-login'] = array(
     'module' => 'user',
     'delta' => 'login',
@@ -121,7 +121,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
 
@@ -185,7 +185,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => 1,
   );
-  
+
   $theme['lang_dropdown-language'] = array(
     'module' => 'lang_dropdown',
     'delta' => 'language',
@@ -199,7 +199,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '<none>',
     'cache' => -1,
   );
-  
+
   $theme['logintoboggan-logintoboggan_logged_in'] = array(
     'module' => 'logintoboggan',
     'delta' => 'logintoboggan_logged_in',
@@ -227,7 +227,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['system-main-menu'] = array(
     'module' => 'system',
     'delta' => 'main-menu',
@@ -241,7 +241,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '<none>',
     'cache' => -1,
   );
-  
+
   $theme['user-login'] = array(
     'module' => 'user',
     'delta' => 'login',
@@ -316,7 +316,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => 1,
   );
-  
+
   $theme['lang_dropdown-language'] = array(
     'module' => 'lang_dropdown',
     'delta' => 'language',
@@ -327,10 +327,10 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['logintoboggan-logintoboggan_logged_in'] = array(
     'module' => 'logintoboggan',
     'delta' => 'logintoboggan_logged_in',
@@ -341,7 +341,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
 
@@ -358,7 +358,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['system-main-menu'] = array(
     'module' => 'system',
     'delta' => 'main-menu',
@@ -369,10 +369,10 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
-  
+
   $theme['user-login'] = array(
     'module' => 'user',
     'delta' => 'login',
@@ -383,7 +383,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
+    'title' => '',
     'cache' => -1,
   );
 
