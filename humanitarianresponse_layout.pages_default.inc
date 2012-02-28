@@ -707,8 +707,268 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'twocol_bricks';
-  $display->layout_settings = array();
+  $display->layout = 'flexible';
+  $display->layout_settings = array(
+    'items' => array(
+      'canvas' => array(
+        'type' => 'row',
+        'contains' => 'column',
+        'children' => array(
+          0 => 'main',
+        ),
+        'parent' => NULL,
+      ),
+      'main' => array(
+        'type' => 'column',
+        'width' => 100,
+        'width_type' => '%',
+        'children' => array(
+          0 => 1,
+        ),
+        'parent' => 'canvas',
+      ),
+      1 => array(
+        'type' => 'row',
+        'contains' => 'column',
+        'children' => array(
+          0 => 2,
+          1 => 3,
+        ),
+        'parent' => 'main',
+        'class' => '',
+      ),
+      2 => array(
+        'type' => 'column',
+        'width' => '70.08387973300253',
+        'width_type' => '%',
+        'parent' => '1',
+        'children' => array(
+          0 => 4,
+          1 => 6,
+          2 => 13,
+        ),
+        'class' => '',
+      ),
+      3 => array(
+        'type' => 'column',
+        'width' => '29.916120266997464',
+        'width_type' => '%',
+        'parent' => '1',
+        'children' => array(
+          0 => 5,
+          1 => 14,
+        ),
+        'class' => '',
+      ),
+      4 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'top',
+        ),
+        'parent' => '2',
+        'class' => '',
+      ),
+      'top' => array(
+        'type' => 'region',
+        'title' => 'Top',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '4',
+        'class' => '',
+      ),
+      5 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'right',
+        ),
+        'parent' => '3',
+        'class' => '',
+      ),
+      'right' => array(
+        'type' => 'region',
+        'title' => 'Right',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '5',
+        'class' => '',
+      ),
+      6 => array(
+        'type' => 'row',
+        'contains' => 'column',
+        'children' => array(
+          0 => 7,
+          1 => 8,
+          2 => 9,
+        ),
+        'parent' => '2',
+        'class' => '',
+      ),
+      7 => array(
+        'type' => 'column',
+        'width' => '33.02078601864469',
+        'width_type' => '%',
+        'parent' => '6',
+        'children' => array(
+          0 => 10,
+        ),
+        'class' => '',
+      ),
+      8 => array(
+        'type' => 'column',
+        'width' => '33.217318669847934',
+        'width_type' => '%',
+        'parent' => '6',
+        'children' => array(
+          0 => 11,
+        ),
+        'class' => '',
+      ),
+      9 => array(
+        'type' => 'column',
+        'width' => '33.76189531150738',
+        'width_type' => '%',
+        'parent' => '6',
+        'children' => array(
+          0 => 12,
+        ),
+        'class' => '',
+      ),
+      10 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'center_left',
+        ),
+        'parent' => '7',
+        'class' => '',
+      ),
+      11 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'center_middle',
+        ),
+        'parent' => '8',
+        'class' => '',
+      ),
+      12 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'center_right',
+        ),
+        'parent' => '9',
+        'class' => '',
+      ),
+      'center_left' => array(
+        'type' => 'region',
+        'title' => 'Center Left',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '10',
+        'class' => '',
+      ),
+      'center_middle' => array(
+        'type' => 'region',
+        'title' => 'Center Middle',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '11',
+        'class' => '',
+      ),
+      'center_right' => array(
+        'type' => 'region',
+        'title' => 'Center Right',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '12',
+        'class' => '',
+      ),
+      13 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'bottom',
+        ),
+        'parent' => '2',
+        'class' => '',
+      ),
+      'bottom' => array(
+        'type' => 'region',
+        'title' => 'Bottom',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '13',
+        'class' => '',
+      ),
+      14 => array(
+        'type' => 'row',
+        'contains' => 'column',
+        'children' => array(
+          0 => 15,
+          1 => 17,
+        ),
+        'parent' => '3',
+        'class' => '',
+      ),
+      15 => array(
+        'type' => 'column',
+        'width' => 50,
+        'width_type' => '%',
+        'parent' => '14',
+        'children' => array(
+          0 => 16,
+        ),
+        'class' => '',
+      ),
+      16 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'bottom_middle',
+        ),
+        'parent' => '15',
+        'class' => '',
+      ),
+      17 => array(
+        'type' => 'column',
+        'width' => 50,
+        'width_type' => '%',
+        'parent' => '14',
+        'children' => array(
+          0 => 18,
+        ),
+        'class' => '',
+      ),
+      18 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'bottom_right',
+        ),
+        'parent' => '17',
+        'class' => '',
+      ),
+      'bottom_middle' => array(
+        'type' => 'region',
+        'title' => 'Bottom Middle',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '16',
+        'class' => '',
+      ),
+      'bottom_right' => array(
+        'type' => 'region',
+        'title' => 'Bottom Right',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '18',
+        'class' => '',
+      ),
+    ),
+  );
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
@@ -719,12 +979,126 @@ function humanitarianresponse_layout_default_page_manager_pages() {
       'left_below' => NULL,
       'right_below' => NULL,
       'bottom' => NULL,
+      'right' => NULL,
+      'center_left' => NULL,
+      'center_middle' => NULL,
+      'center_right' => NULL,
+      'bottom_middle' => NULL,
+      'bottom_right' => NULL,
     ),
   );
   $display->cache = array();
   $display->title = '';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass;
+    $pane->pid = 'new-21';
+    $pane->panel = 'bottom';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'clusters-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-21'] = $pane;
+    $display->panels['bottom'][0] = 'new-21';
+    $pane = new stdClass;
+    $pane->pid = 'new-22';
+    $pane->panel = 'center_left';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'documents-panel_pane_9';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-22'] = $pane;
+    $display->panels['center_left'][0] = 'new-22';
+    $pane = new stdClass;
+    $pane->pid = 'new-23';
+    $pane->panel = 'center_middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'maps_view-panel_pane_3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-23'] = $pane;
+    $display->panels['center_middle'][0] = 'new-23';
+    $pane = new stdClass;
+    $pane->pid = 'new-24';
+    $pane->panel = 'center_right';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'documents-panel_pane_8';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-24'] = $pane;
+    $display->panels['center_right'][0] = 'new-24';
+    $pane = new stdClass;
+    $pane->pid = 'new-25';
+    $pane->panel = 'right';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'documents-panel_pane_7';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-25'] = $pane;
+    $display->panels['right'][0] = 'new-25';
+    $pane = new stdClass;
+    $pane->pid = 'new-26';
+    $pane->panel = 'right';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'news-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-26'] = $pane;
+    $display->panels['right'][1] = 'new-26';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
