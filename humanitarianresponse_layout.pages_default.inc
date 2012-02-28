@@ -380,7 +380,7 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
           'name' => 'entity_bundle:taxonomy_term',
           'settings' => array(
             'type' => array(
-              'funding_mechanisms' => 'funding_mechanisms',
+              'funding' => 'funding',
             ),
           ),
           'context' => 'argument_term_1',
