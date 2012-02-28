@@ -125,6 +125,48 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => -1,
   );
 
+  $theme['views-clusters-block'] = array(
+    'module' => 'views',
+    'delta' => 'clusters-block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'clusters/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-coordination_hubs-block'] = array(
+    'module' => 'views',
+    'delta' => 'coordination_hubs-block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'coordination-hubs/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-funding-block'] = array(
+    'module' => 'views',
+    'delta' => 'funding-block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'funding/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
   $theme['views-links-block'] = array(
     'module' => 'views',
     'delta' => 'links-block',
@@ -256,6 +298,48 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => -1,
   );
 
+  $theme['views-clusters-block'] = array(
+    'module' => 'views',
+    'delta' => 'clusters-block',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-14',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'clusters/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-coordination_hubs-block'] = array(
+    'module' => 'views',
+    'delta' => 'coordination_hubs-block',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'coordination-hubs/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-funding-block'] = array(
+    'module' => 'views',
+    'delta' => 'funding-block',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'funding/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
   $theme['views-links-block'] = array(
     'module' => 'views',
     'delta' => 'links-block',
@@ -383,6 +467,48 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-clusters-block'] = array(
+    'module' => 'views',
+    'delta' => 'clusters-block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'clusters/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-coordination_hubs-block'] = array(
+    'module' => 'views',
+    'delta' => 'coordination_hubs-block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'coordination-hubs/*',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-funding-block'] = array(
+    'module' => 'views',
+    'delta' => 'funding-block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'funding/*',
     'title' => '',
     'cache' => -1,
   );
