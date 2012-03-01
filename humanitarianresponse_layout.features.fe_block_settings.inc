@@ -251,6 +251,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => -1,
   );
 
+  $theme['search_api_page-search_page'] = array(
+    'module' => 'search_api_page',
+    'delta' => 'search_page',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '1',
+  );
+
   $theme['system-main'] = array(
     'module' => 'system',
     'delta' => 'main',
@@ -569,7 +583,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'delta' => 'language',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-13',
+    'weight' => '-22',
     'region' => 'user_second',
     'custom' => '0',
     'visibility' => '0',
@@ -583,13 +597,27 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'delta' => 'logintoboggan_logged_in',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-8',
+    'weight' => '-21',
     'region' => 'user_second',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
     'title' => '<none>',
     'cache' => -1,
+  );
+
+  $theme['search_api_page-search_page'] = array(
+    'module' => 'search_api_page',
+    'delta' => 'search_page',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '-20',
+    'region' => 'user_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '1',
   );
 
   $theme['system-main'] = array(
@@ -611,7 +639,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'delta' => 'main-menu',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-13',
+    'weight' => '-23',
     'region' => 'menu',
     'custom' => '0',
     'visibility' => '0',
@@ -625,7 +653,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'delta' => 'login',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-14',
+    'weight' => '-23',
     'region' => 'user_second',
     'custom' => '0',
     'visibility' => '0',
@@ -931,6 +959,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'pages' => '',
     'title' => '',
     'cache' => -1,
+  );
+
+  $theme['search_api_page-search_page'] = array(
+    'module' => 'search_api_page',
+    'delta' => 'search_page',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '1',
   );
 
   $theme['system-main'] = array(
