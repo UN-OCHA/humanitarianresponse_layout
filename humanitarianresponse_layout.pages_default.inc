@@ -739,7 +739,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
       ),
       2 => array(
         'type' => 'column',
-        'width' => '70.08387973300253',
+        'width' => '65.05899221286992',
         'width_type' => '%',
         'parent' => '1',
         'children' => array(
@@ -751,12 +751,11 @@ function humanitarianresponse_layout_default_page_manager_pages() {
       ),
       3 => array(
         'type' => 'column',
-        'width' => '29.916120266997464',
+        'width' => '34.941007787130076',
         'width_type' => '%',
         'parent' => '1',
         'children' => array(
           0 => 5,
-          1 => 14,
         ),
         'class' => '',
       ),
@@ -903,70 +902,6 @@ function humanitarianresponse_layout_default_page_manager_pages() {
         'parent' => '13',
         'class' => '',
       ),
-      14 => array(
-        'type' => 'row',
-        'contains' => 'column',
-        'children' => array(
-          0 => 15,
-          1 => 17,
-        ),
-        'parent' => '3',
-        'class' => '',
-      ),
-      15 => array(
-        'type' => 'column',
-        'width' => 50,
-        'width_type' => '%',
-        'parent' => '14',
-        'children' => array(
-          0 => 16,
-        ),
-        'class' => '',
-      ),
-      16 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'bottom_middle',
-        ),
-        'parent' => '15',
-        'class' => '',
-      ),
-      17 => array(
-        'type' => 'column',
-        'width' => 50,
-        'width_type' => '%',
-        'parent' => '14',
-        'children' => array(
-          0 => 18,
-        ),
-        'class' => '',
-      ),
-      18 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'bottom_right',
-        ),
-        'parent' => '17',
-        'class' => '',
-      ),
-      'bottom_middle' => array(
-        'type' => 'region',
-        'title' => 'Bottom Middle',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '16',
-        'class' => '',
-      ),
-      'bottom_right' => array(
-        'type' => 'region',
-        'title' => 'Bottom Right',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '18',
-        'class' => '',
-      ),
     ),
   );
   $display->panel_settings = array(
@@ -1099,6 +1034,42 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-26'] = $pane;
     $display->panels['right'][1] = 'new-26';
+    $pane = new stdClass;
+    $pane->pid = 'new-27';
+    $pane->panel = 'right';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'media-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-27'] = $pane;
+    $display->panels['right'][2] = 'new-27';
+    $pane = new stdClass;
+    $pane->pid = 'new-28';
+    $pane->panel = 'top';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'media-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-28'] = $pane;
+    $display->panels['top'][0] = 'new-28';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
