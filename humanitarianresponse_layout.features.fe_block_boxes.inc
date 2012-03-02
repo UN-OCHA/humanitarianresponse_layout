@@ -20,6 +20,22 @@ function humanitarianresponse_layout_default_fe_block_boxes() {
   $export['contact'] = $fe_block_boxes;
 
   $fe_block_boxes = new stdClass;
+  $fe_block_boxes->info = 'Home Calendar Text';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'home_calendar_text';
+  $fe_block_boxes->body = '<p><img alt="Calendar icon" src="/profiles/humanitarianresponse/themes/humanitarianresponse/images/calendar.png">See what\'s happening on our <a href="coordination/calendar">calendar of meetings and events</a></p>';
+
+  $export['home_calendar_text'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass;
+  $fe_block_boxes->info = 'Home COD Text';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'home_cod_text';
+  $fe_block_boxes->body = '<p><img alt="COD icon" src="/profiles/humanitarianresponse/themes/humanitarianresponse/images/cod.png"><a href="maps/maps">Common and Fundamental Operational Data</a> (including GIS)</p>';
+
+  $export['home_cod_text'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass;
   $fe_block_boxes->info = 'Legal';
   $fe_block_boxes->format = 'filtered_html';
   $fe_block_boxes->machine_name = 'legal';
