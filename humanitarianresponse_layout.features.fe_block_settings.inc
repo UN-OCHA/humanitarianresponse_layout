@@ -279,9 +279,9 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => -1,
   );
 
-  $theme['search_api_page-search_page'] = array(
-    'module' => 'search_api_page',
-    'delta' => 'search_page',
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
     'theme' => 'bartik',
     'status' => 0,
     'weight' => '0',
@@ -290,7 +290,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '',
-    'cache' => '1',
+    'cache' => -1,
   );
 
   $theme['system-main'] = array(
@@ -662,18 +662,18 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => -1,
   );
 
-  $theme['search_api_page-search_page'] = array(
-    'module' => 'search_api_page',
-    'delta' => 'search_page',
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-20',
+    'weight' => '-19',
     'region' => 'user_second',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '<none>',
-    'cache' => '1',
+    'title' => '',
+    'cache' => -1,
   );
 
   $theme['system-main'] = array(
@@ -695,7 +695,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'delta' => 'main-menu',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-23',
+    'weight' => '-22',
     'region' => 'menu',
     'custom' => '0',
     'visibility' => '0',
@@ -709,7 +709,7 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'delta' => 'login',
     'theme' => 'humanitarianresponse',
     'status' => '1',
-    'weight' => '-23',
+    'weight' => '-22',
     'region' => 'user_second',
     'custom' => '0',
     'visibility' => '0',
@@ -1045,18 +1045,18 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'cache' => -1,
   );
 
-  $theme['search_api_page-search_page'] = array(
-    'module' => 'search_api_page',
-    'delta' => 'search_page',
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
     'theme' => 'seven',
-    'status' => 0,
+    'status' => '1',
     'weight' => '0',
-    'region' => '',
+    'region' => 'dashboard_inactive',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
     'title' => '',
-    'cache' => '1',
+    'cache' => -1,
   );
 
   $theme['system-main'] = array(
