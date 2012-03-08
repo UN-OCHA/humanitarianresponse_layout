@@ -1142,7 +1142,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-28';
     $pane->panel = 'right_middle_left';
     $pane->type = 'block';
-    $pane->subtype = 'block-3';
+    $pane->subtype = 'block-2';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -1163,7 +1163,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-29';
     $pane->panel = 'right_middle_right';
     $pane->type = 'block';
-    $pane->subtype = 'block-4';
+    $pane->subtype = 'block-3';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

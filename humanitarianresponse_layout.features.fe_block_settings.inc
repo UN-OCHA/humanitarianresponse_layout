@@ -27,20 +27,6 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'machine_name' => 'contact',
   );
 
-  $theme['block-legal'] = array(
-    'module' => 'block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'machine_name' => 'legal',
-  );
-
   $theme['block-home_calendar_text'] = array(
     'module' => 'block',
     'theme' => 'bartik',
@@ -67,6 +53,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
     'machine_name' => 'home_cod_text',
+  );
+
+  $theme['block-legal'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'legal',
   );
 
   $theme['facetapi-FKBVzvYt9xMqDr8L58X0KOiiv1D8E5Ao'] = array(
@@ -410,20 +410,6 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'machine_name' => 'contact',
   );
 
-  $theme['block-legal'] = array(
-    'module' => 'block',
-    'theme' => 'humanitarianresponse',
-    'status' => '1',
-    'weight' => '0',
-    'region' => 'postscript_fourth',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => 'Legal',
-    'cache' => -1,
-    'machine_name' => 'legal',
-  );
-
   $theme['block-home_calendar_text'] = array(
     'module' => 'block',
     'theme' => 'humanitarianresponse',
@@ -450,6 +436,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
     'machine_name' => 'home_cod_text',
+  );
+
+  $theme['block-legal'] = array(
+    'module' => 'block',
+    'theme' => 'humanitarianresponse',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'postscript_fourth',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => 'Legal',
+    'cache' => -1,
+    'machine_name' => 'legal',
   );
 
   $theme['facetapi-FKBVzvYt9xMqDr8L58X0KOiiv1D8E5Ao'] = array(
@@ -793,20 +793,6 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'machine_name' => 'contact',
   );
 
-  $theme['block-legal'] = array(
-    'module' => 'block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'machine_name' => 'legal',
-  );
-
   $theme['block-home_calendar_text'] = array(
     'module' => 'block',
     'theme' => 'seven',
@@ -833,6 +819,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
     'machine_name' => 'home_cod_text',
+  );
+
+  $theme['block-legal'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'legal',
   );
 
   $theme['facetapi-FKBVzvYt9xMqDr8L58X0KOiiv1D8E5Ao'] = array(
