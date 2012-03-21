@@ -228,6 +228,12 @@ function humanitarianresponse_layout_context_default_contexts() {
     'block' => array(
       'disable_core_blocks' => '1',
       'blocks' => array(
+        'system-main' => array(
+          'module' => 'system',
+          'delta' => 'main',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'user-login' => array(
           'module' => 'user',
           'delta' => 'login',
@@ -252,21 +258,57 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'menu',
           'weight' => '-10',
         ),
-        'facetapi-cpoyWFNPOVLHvKGY6t6bb8LVM41Xs2Dm' => array(
+        'facetapi-JAKZs3absS9kL1zrH6idqbCFj61Z4SpL' => array(
           'module' => 'facetapi',
-          'delta' => 'cpoyWFNPOVLHvKGY6t6bb8LVM41Xs2Dm',
+          'delta' => 'JAKZs3absS9kL1zrH6idqbCFj61Z4SpL',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
-        'facetapi-stEMVIWfiMnc0Su1rCOk69GTqqvFjXLz' => array(
+        'facetapi-Nars6CXEF2stEbUlZR8NEnqEtBDARTb1' => array(
           'module' => 'facetapi',
-          'delta' => 'stEMVIWfiMnc0Su1rCOk69GTqqvFjXLz',
+          'delta' => 'Nars6CXEF2stEbUlZR8NEnqEtBDARTb1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'facetapi-Uz43FkEp5BeMap09k2L4q5cxiMpioh2N' => array(
+          'module' => 'facetapi',
+          'delta' => 'Uz43FkEp5BeMap09k2L4q5cxiMpioh2N',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'facetapi-SRTVUTAsjHh8QrIHE2NMBl3MM1s3qOKp' => array(
+          'module' => 'facetapi',
+          'delta' => 'SRTVUTAsjHh8QrIHE2NMBl3MM1s3qOKp',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'facetapi-YQrWdaYB0Jm9BGw7VcgHFswJHlxawCsl' => array(
+          'module' => 'facetapi',
+          'delta' => 'YQrWdaYB0Jm9BGw7VcgHFswJHlxawCsl',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'facetapi-rOO3lO2B480jNa51cz03IJgosO6bbCBm' => array(
+          'module' => 'facetapi',
+          'delta' => 'rOO3lO2B480jNa51cz03IJgosO6bbCBm',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'facetapi-WaEgyIn8f6HkMj1R536Y3vBptvKRj30W' => array(
+          'module' => 'facetapi',
+          'delta' => 'WaEgyIn8f6HkMj1R536Y3vBptvKRj30W',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
         'facetapi-FKBVzvYt9xMqDr8L58X0KOiiv1D8E5Ao' => array(
           'module' => 'facetapi',
           'delta' => 'FKBVzvYt9xMqDr8L58X0KOiiv1D8E5Ao',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'facetapi-stEMVIWfiMnc0Su1rCOk69GTqqvFjXLz' => array(
+          'module' => 'facetapi',
+          'delta' => 'stEMVIWfiMnc0Su1rCOk69GTqqvFjXLz',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -288,45 +330,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
-        'facetapi-WaEgyIn8f6HkMj1R536Y3vBptvKRj30W' => array(
+        'facetapi-cpoyWFNPOVLHvKGY6t6bb8LVM41Xs2Dm' => array(
           'module' => 'facetapi',
-          'delta' => 'WaEgyIn8f6HkMj1R536Y3vBptvKRj30W',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'facetapi-rOO3lO2B480jNa51cz03IJgosO6bbCBm' => array(
-          'module' => 'facetapi',
-          'delta' => 'rOO3lO2B480jNa51cz03IJgosO6bbCBm',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'facetapi-Nars6CXEF2stEbUlZR8NEnqEtBDARTb1' => array(
-          'module' => 'facetapi',
-          'delta' => 'Nars6CXEF2stEbUlZR8NEnqEtBDARTb1',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'facetapi-JAKZs3absS9kL1zrH6idqbCFj61Z4SpL' => array(
-          'module' => 'facetapi',
-          'delta' => 'JAKZs3absS9kL1zrH6idqbCFj61Z4SpL',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'facetapi-Uz43FkEp5BeMap09k2L4q5cxiMpioh2N' => array(
-          'module' => 'facetapi',
-          'delta' => 'Uz43FkEp5BeMap09k2L4q5cxiMpioh2N',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'facetapi-SRTVUTAsjHh8QrIHE2NMBl3MM1s3qOKp' => array(
-          'module' => 'facetapi',
-          'delta' => 'SRTVUTAsjHh8QrIHE2NMBl3MM1s3qOKp',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'facetapi-YQrWdaYB0Jm9BGw7VcgHFswJHlxawCsl' => array(
-          'module' => 'facetapi',
-          'delta' => 'YQrWdaYB0Jm9BGw7VcgHFswJHlxawCsl',
+          'delta' => 'cpoyWFNPOVLHvKGY6t6bb8LVM41Xs2Dm',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
