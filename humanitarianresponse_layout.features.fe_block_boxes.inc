@@ -10,7 +10,7 @@
 function humanitarianresponse_layout_default_fe_block_boxes() {
   $export = array();
 
-  $fe_block_boxes = new stdClass;
+  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Contact';
   $fe_block_boxes->format = 'filtered_html';
   $fe_block_boxes->machine_name = 'contact';
@@ -19,7 +19,7 @@ function humanitarianresponse_layout_default_fe_block_boxes() {
 
   $export['contact'] = $fe_block_boxes;
 
-  $fe_block_boxes = new stdClass;
+  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Home Calendar Text';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'home_calendar_text';
@@ -27,7 +27,7 @@ function humanitarianresponse_layout_default_fe_block_boxes() {
 
   $export['home_calendar_text'] = $fe_block_boxes;
 
-  $fe_block_boxes = new stdClass;
+  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Home COD Text';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'home_cod_text';
@@ -35,7 +35,7 @@ function humanitarianresponse_layout_default_fe_block_boxes() {
 
   $export['home_cod_text'] = $fe_block_boxes;
 
-  $fe_block_boxes = new stdClass;
+  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Legal';
   $fe_block_boxes->format = 'filtered_html';
   $fe_block_boxes->machine_name = 'legal';
