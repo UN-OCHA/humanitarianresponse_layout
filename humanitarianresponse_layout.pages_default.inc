@@ -200,8 +200,8 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
-      'use_pager' => 1,
-      'nodes_per_page' => '0',
+      'use_pager' => 0,
+      'nodes_per_page' => '6',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -210,7 +210,7 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'page_3',
+      'display' => 'block_1',
       'context' => array(
         0 => '',
       ),

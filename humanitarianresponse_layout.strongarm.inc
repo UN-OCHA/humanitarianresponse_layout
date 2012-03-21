@@ -66,6 +66,13 @@ function humanitarianresponse_layout_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'path_alias_xt_regex_pattern';
+  $strongarm->value = '{(^node|^user|^taxonomy/term)/([0-9]+)(.*)}';
+  $export['path_alias_xt_regex_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'index';
   $export['site_frontpage'] = $strongarm;
