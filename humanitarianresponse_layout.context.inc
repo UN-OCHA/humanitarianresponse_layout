@@ -13,6 +13,34 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'assessments';
+  $context->description = 'When accessing a node of type assessment';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'assessment' => 'assessment',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'resources/assessment-registry',
+    'menu' => 'resources',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type assessment');
+  t('nodes');
+  $export['assessments'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'clusters';
   $context->description = 'When accessing a cluster taxonomy term';
   $context->tag = '';
@@ -20,25 +48,13 @@ function humanitarianresponse_layout_context_default_contexts() {
     'path' => array(
       'values' => array(
         'clusters/*' => 'clusters/*',
+        '~clusters/*/*' => '~clusters/*/*',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
-      'disable_core_blocks' => '1',
       'blocks' => array(
-        'views-clusters-block' => array(
-          'module' => 'views',
-          'delta' => 'clusters-block',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
-        'menu-menu-cluster' => array(
-          'module' => 'menu',
-          'delta' => 'menu-cluster',
-          'region' => 'sidebar_first',
-          'weight' => '-9',
-        ),
         'views-contacts-block_1' => array(
           'module' => 'views',
           'delta' => 'contacts-block_1',
@@ -66,6 +82,72 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('When accessing a cluster taxonomy term');
   $export['clusters'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'clusters_all';
+  $context->description = 'When accessing all pages within a cluster';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'clusters/*' => 'clusters/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-clusters-block' => array(
+          'module' => 'views',
+          'delta' => 'clusters-block',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+        'menu-menu-cluster' => array(
+          'module' => 'menu',
+          'delta' => 'menu-cluster',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing all pages within a cluster');
+  $export['clusters_all'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'contacts';
+  $context->description = 'When accessing a node of type contact';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'contact' => 'contact',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'coordination/contacts',
+    'menu' => 'node/1',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type contact');
+  t('nodes');
+  $export['contacts'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
@@ -148,6 +230,62 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'documents';
+  $context->description = 'When accessing a node of type document';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'document' => 'document',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'resources',
+    'menu' => 'resources',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type document');
+  t('nodes');
+  $export['documents'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'events';
+  $context->description = 'When accessing a node of type event';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'event' => 'event',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'media/events',
+    'menu' => 'node/3',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type event');
+  t('nodes');
+  $export['events'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'funding';
   $context->description = 'When accessing a funding taxonomy term';
   $context->tag = '';
@@ -210,6 +348,90 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('When accessing a funding taxonomy term');
   $export['funding'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'humanitarian_profiles';
+  $context->description = 'When accessing a node of type humanitarian profile';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'humanitarian_profile' => 'humanitarian_profile',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'coordination/humanitarian-profile',
+    'menu' => 'node/1',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type humanitarian profile');
+  t('nodes');
+  $export['humanitarian_profiles'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'maps';
+  $context->description = 'When accessing a node of type map';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'map' => 'map',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'maps/maps',
+    'menu' => 'node/2',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type map');
+  t('nodes');
+  $export['maps'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'news';
+  $context->description = 'When accessing a node of type news';
+  $context->tag = 'nodes';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'news' => 'news',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb' => 'media/news',
+    'menu' => 'node/3',
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a node of type news');
+  t('nodes');
+  $export['news'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
