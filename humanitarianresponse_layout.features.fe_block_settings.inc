@@ -69,6 +69,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'machine_name' => 'legal',
   );
 
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
   $export['bartik'] = $theme;
 
   // humanitarianresponse
@@ -130,6 +144,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'machine_name' => 'legal',
   );
 
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'humanitarianresponse',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
   $export['humanitarianresponse'] = $theme;
 
   // seven
@@ -189,6 +217,20 @@ function humanitarianresponse_layout_default_fe_block_settings() {
     'title' => '',
     'cache' => -1,
     'machine_name' => 'legal',
+  );
+
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
   );
 
   $export['seven'] = $theme;
