@@ -588,9 +588,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'menu',
           'weight' => '-10',
         ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => 1,
+        'boxes-contact' => array(
+          'module' => 'boxes',
+          'delta' => 'contact',
           'region' => 'postscript_first',
           'weight' => '-10',
         ),
@@ -606,9 +606,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'postscript_third',
           'weight' => '-10',
         ),
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => 4,
+        'boxes-legal' => array(
+          'module' => 'boxes',
+          'delta' => 'legal',
           'region' => 'postscript_fourth',
           'weight' => '-10',
         ),

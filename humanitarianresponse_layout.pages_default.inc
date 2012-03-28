@@ -948,7 +948,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-15';
     $pane->panel = 'right_middle_left';
     $pane->type = 'block';
-    $pane->subtype = 'block-2';
+    $pane->subtype = 'boxes-home_calendar';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -969,7 +969,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-16';
     $pane->panel = 'right_middle_right';
     $pane->type = 'block';
-    $pane->subtype = 'block-3';
+    $pane->subtype = 'boxes-home_cod';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
