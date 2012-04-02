@@ -66,6 +66,41 @@ function humanitarianresponse_layout_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_button_option';
+  $strongarm->value = 'stbc_';
+  $export['sharethis_button_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_node_option';
+  $strongarm->value = 'news,event';
+  $export['sharethis_node_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_service_option';
+  $strongarm->value = '"Google:google","Tweet:twitter","Facebook:facebook","ShareThis:sharethis"';
+  $export['sharethis_service_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_teaser_option';
+  $strongarm->value = '0';
+  $export['sharethis_teaser_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_widget_option';
+  $strongarm->value = 'st_multi';
+  $export['sharethis_widget_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'index';
   $export['site_frontpage'] = $strongarm;
