@@ -582,9 +582,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'user_second',
           'weight' => '-8',
         ),
-        'system-main-menu' => array(
-          'module' => 'system',
-          'delta' => 'main-menu',
+        'superfish-1' => array(
+          'module' => 'superfish',
+          'delta' => 1,
           'region' => 'menu',
           'weight' => '-10',
         ),
