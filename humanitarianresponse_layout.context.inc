@@ -410,7 +410,6 @@ function humanitarianresponse_layout_context_default_contexts() {
   );
   $context->reactions = array(
     'block' => array(
-      'disable_core_blocks' => '1',
       'blocks' => array(
         'views-highlight-block_1' => array(
           'module' => 'views',
@@ -450,6 +449,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         ),
       ),
     ),
+    'breadcrumb' => 'funding',
   );
   $context->condition_mode = 0;
 
@@ -621,6 +621,41 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('Sitewide context');
   $export['sitewide'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'sitewide_breadcrumb';
+  $context->description = 'When to display the current page breadcrumb';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~<front>' => '~<front>',
+        '~search' => '~search',
+        '~search/*' => '~search/*',
+        '~coordination/calendar' => '~coordination/calendar',
+      ),
+    ),
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'breadcrumb_current_page' => array(
+      'breadcrumb_show_current_page' => 1,
+      'breadcrumb_show_current_page_title' => '',
+      'breadcrumb_show_current_page_only' => 0,
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When to display the current page breadcrumb');
+  $export['sitewide_breadcrumb'] = $context;
 
   return $export;
 }
