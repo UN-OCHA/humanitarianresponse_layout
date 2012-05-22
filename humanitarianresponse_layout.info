@@ -8,7 +8,6 @@ dependencies[] = context
 dependencies[] = context_breadcrumb_current_page
 dependencies[] = context_ui
 dependencies[] = ctools
-dependencies[] = dhtml_menu
 dependencies[] = facetapi
 dependencies[] = follow
 dependencies[] = humanitarianresponse_assessments
