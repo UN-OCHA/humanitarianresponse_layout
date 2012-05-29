@@ -423,12 +423,6 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '-30',
         ),
-        'views-funding-block' => array(
-          'module' => 'views',
-          'delta' => 'funding-block',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
         'views-contacts-block_1' => array(
           'module' => 'views',
           'delta' => 'contacts-block_1',
