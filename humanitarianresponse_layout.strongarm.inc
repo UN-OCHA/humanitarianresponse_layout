@@ -65,6 +65,20 @@ function humanitarianresponse_layout_strongarm() {
   $strongarm->name = 'sharethis_widget_option';
   $strongarm->value = 'st_multi';
   $export['sharethis_widget_option'] = $strongarm;
+  
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_location';
+  $strongarm->value = 'links';
+  $export['sharethis_location'] = $strongarm;
+  
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_weight';
+  $strongarm->value = '100';
+  $export['sharethis_weight'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
