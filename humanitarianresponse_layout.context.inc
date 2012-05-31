@@ -99,17 +99,17 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-clusters-block' => array(
-          'module' => 'views',
-          'delta' => 'clusters-block',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
         'menu-menu-cluster' => array(
           'module' => 'menu',
           'delta' => 'menu-cluster',
           'region' => 'sidebar_first',
-          'weight' => '-9',
+          'weight' => '-35',
+        ),
+        'views-clusters-block' => array(
+          'module' => 'views',
+          'delta' => 'clusters-block',
+          'region' => 'sidebar_first',
+          'weight' => '-34',
         ),
       ),
     ),
