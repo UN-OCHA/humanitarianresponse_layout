@@ -31,7 +31,7 @@ function humanitarianresponse_layout_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Home COD Text';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'home_cod_text';
-  $fe_block_boxes->body = '<p><img alt="COD icon" src="/sites/all/themes/humanitarianresponse/images/cod.png"><a href="maps/maps">Common and Fundamental Operational Data</a> (including GIS)</p>';
+  $fe_block_boxes->body = '<p style="display: inline;"><img alt="COD icon" src="/sites/all/themes/humanitarianresponse/images/cod.png"></p><p style="margin-left: 50px;"><a href="visuals-data/visuals">Common and Fundamental Operational Data</a> (including GIS)</p>';
 
   $export['home_cod_text'] = $fe_block_boxes;
 
