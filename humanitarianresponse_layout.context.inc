@@ -138,7 +138,7 @@ function humanitarianresponse_layout_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'breadcrumb' => 'coordination/contacts',
+    'breadcrumb' => 'coordination/operational-presence',
     'menu' => 'node/1',
   );
   $context->condition_mode = 0;
@@ -272,7 +272,7 @@ function humanitarianresponse_layout_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'breadcrumb' => 'media/events',
+    'breadcrumb' => 'media-center/events',
     'menu' => 'node/3',
   );
   $context->condition_mode = 0;
@@ -293,11 +293,6 @@ function humanitarianresponse_layout_context_default_contexts() {
     'path' => array(
       'values' => array(
         'search/*' => 'search/*',
-      ),
-    ),
-    'views' => array(
-      'values' => array(
-        'resources:page' => 'resources:page',
       ),
     ),
   );
@@ -384,6 +379,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         ),
       ),
     ),
+    'breadcrumb' => '<front>',
   );
   $context->condition_mode = 0;
 
@@ -469,8 +465,8 @@ function humanitarianresponse_layout_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'breadcrumb' => 'coordination/humanitarian-profile',
-    'menu' => 'node/1',
+    'breadcrumb' => 'visuals-data/humanitarian-profile',
+    'menu' => 'node/2',
   );
   $context->condition_mode = 0;
 
@@ -497,7 +493,7 @@ function humanitarianresponse_layout_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'breadcrumb' => 'maps/maps',
+    'breadcrumb' => 'visuals-data/visuals',
     'menu' => 'node/2',
   );
   $context->condition_mode = 0;
@@ -525,7 +521,7 @@ function humanitarianresponse_layout_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'breadcrumb' => 'media/news',
+    'breadcrumb' => 'media-center/news',
     'menu' => 'node/3',
   );
   $context->condition_mode = 0;
