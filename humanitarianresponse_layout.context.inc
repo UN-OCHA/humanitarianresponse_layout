@@ -286,8 +286,8 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'facets';
-  $context->description = 'When to display search facets';
+  $context->name = 'search';
+  $context->description = 'On search pages';
   $context->tag = '';
   $context->conditions = array(
     'path' => array(
@@ -386,7 +386,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When to display search facets');
-  $export['facets'] = $context;
+  $export['search'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
