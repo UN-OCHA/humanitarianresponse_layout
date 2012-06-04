@@ -49,7 +49,7 @@ function humanitarianresponse_layout_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_node_option';
-  $strongarm->value = 'news,event';
+  $strongarm->value = 'news,event,map,document';
   $export['sharethis_node_option'] = $strongarm;
 
   $strongarm = new stdClass();
