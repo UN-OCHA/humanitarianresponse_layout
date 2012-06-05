@@ -51,7 +51,7 @@ function humanitarianresponse_layout_default_box() {
   $box->description = 'Home COD';
   $box->options = array(
     'body' => array(
-      'value' => '<p><img alt="COD icon" src="/sites/all/themes/humanitarianresponse/images/cod.png"><a href="maps/maps">Common and Fundamental Operational Data</a> (including GIS)</p>',
+      'value' => '<p style="display: inline;"><img alt="COD icon" src="/sites/all/themes/humanitarianresponse/images/cod.png"></p><p style="margin-left: 50px;"><a href="visuals-data/visuals">Common and Fundamental Operational Data</a> (including GIS)</p>',
       'format' => 'full_html',
     ),
     'additional_classes' => '',
