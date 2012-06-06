@@ -587,9 +587,9 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->description = 'Sitewide context';
   $context->tag = '';
   $context->conditions = array(
-    'path' => array(
+    'context' => array(
       'values' => array(
-        '~funding/*' => '~funding/*',
+        '~funding' => '~funding',
       ),
     ),
     'sitewide' => array(
