@@ -78,6 +78,7 @@ features[variable][] = sharethis_weight
 features[variable][] = sharethis_widget_option
 features[variable][] = site_frontpage
 features[variable][] = superfish_menu_1
+features[variable][] = superfish_shadow_1
 features[variable][] = superfish_style_1
 features[variable][] = superfish_touch_1
 features[variable][] = theme_default
