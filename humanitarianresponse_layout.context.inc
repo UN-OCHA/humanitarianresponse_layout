@@ -167,7 +167,6 @@ function humanitarianresponse_layout_context_default_contexts() {
   );
   $context->reactions = array(
     'block' => array(
-      'disable_core_blocks' => '1',
       'blocks' => array(
         'views-highlight-block_1' => array(
           'module' => 'views',
@@ -199,6 +198,30 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '-6',
         ),
+        'user-login' => array(
+          'module' => 'user',
+          'delta' => 'login',
+          'region' => 'user_second',
+          'weight' => '-10',
+        ),
+        'logintoboggan-logintoboggan_logged_in' => array(
+          'module' => 'logintoboggan',
+          'delta' => 'logintoboggan_logged_in',
+          'region' => 'user_second',
+          'weight' => '-33',
+        ),
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'user_second',
+          'weight' => '-32',
+        ),
+        'superfish-1' => array(
+          'module' => 'superfish',
+          'delta' => 1,
+          'region' => 'menu',
+          'weight' => '-10',
+        ),
         'views-coordination_hubs-block' => array(
           'module' => 'views',
           'delta' => 'coordination_hubs-block',
@@ -211,6 +234,30 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
+        'boxes-contact' => array(
+          'module' => 'boxes',
+          'delta' => 'contact',
+          'region' => 'postscript_first',
+          'weight' => '-10',
+        ),
+        'views-links-block' => array(
+          'module' => 'views',
+          'delta' => 'links-block',
+          'region' => 'postscript_second',
+          'weight' => '-10',
+        ),
+        'follow-site' => array(
+          'module' => 'follow',
+          'delta' => 'site',
+          'region' => 'postscript_third',
+          'weight' => '-10',
+        ),
+        'boxes-legal' => array(
+          'module' => 'boxes',
+          'delta' => 'legal',
+          'region' => 'postscript_fourth',
+          'weight' => '-10',
+        ),
         'system-main' => array(
           'module' => 'system',
           'delta' => 'main',
@@ -219,6 +266,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         ),
       ),
     ),
+    'breadcrumb' => 'coordination/coordination-hubs',
   );
   $context->condition_mode = 0;
 
@@ -590,6 +638,7 @@ function humanitarianresponse_layout_context_default_contexts() {
     'context' => array(
       'values' => array(
         '~funding' => '~funding',
+        '~coordination_hub' => '~coordination_hub',
       ),
     ),
     'sitewide' => array(
