@@ -200,8 +200,8 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
+      'use_pager' => 1,
+      'nodes_per_page' => '10',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -210,7 +210,7 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'block_1',
+      'display' => 'cluster_guidelines',
       'context' => array(
         0 => '',
       ),
@@ -236,8 +236,8 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '5',
+      'use_pager' => 1,
+      'nodes_per_page' => '10',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -246,7 +246,7 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'block_3',
+      'display' => 'block_per_term',
       'context' => array(
         0 => '',
       ),
@@ -318,7 +318,7 @@ function humanitarianresponse_layout_default_page_manager_handlers() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'block_2',
+      'display' => 'cluster_key',
       'context' => array(
         0 => '',
       ),
@@ -840,7 +840,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-9';
     $pane->panel = 'center_left';
     $pane->type = 'views_panes';
-    $pane->subtype = 'documents-panel_pane_9';
+    $pane->subtype = 'documents-home_reports';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -876,7 +876,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-11';
     $pane->panel = 'center_right';
     $pane->type = 'views_panes';
-    $pane->subtype = 'documents-panel_pane_8';
+    $pane->subtype = 'documents-home_featured';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -894,7 +894,7 @@ function humanitarianresponse_layout_default_page_manager_pages() {
     $pane->pid = 'new-12';
     $pane->panel = 'right';
     $pane->type = 'views_panes';
-    $pane->subtype = 'documents-panel_pane_7';
+    $pane->subtype = 'documents-home_key';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
