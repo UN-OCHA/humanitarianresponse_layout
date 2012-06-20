@@ -117,6 +117,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         ),
       ),
     ),
+    'breadcrumb' => 'clusters',
   );
   $context->condition_mode = 0;
 
