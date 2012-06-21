@@ -40,11 +40,6 @@ function humanitarianresponse_layout_menu_alter(&$items) {
   $items['taxonomy/term/%taxonomy_term']['title callback'] = 'humanitarianresponse_layout_taxonomy_term_title';
   $items['taxonomy/term/%taxonomy_term']['file'] = 'humanitarianresponse_layout.module';
   $items['taxonomy/term/%taxonomy_term']['module'] = 'humanitarianresponse_layout';
-  db_update('system')
-    ->fields(array('weight' => 10))
-    ->condition('name', 'humanitarianresponse_layout')
-    ->execute();
-  debug($items['taxonomy/term/%taxonomy_term']);
 }
 
 /**
@@ -56,7 +51,6 @@ function humanitarianresponse_layout_menu_alter(&$items) {
  *   The page content.
  */
 function humanitarianresponse_layout_taxonomy_term_page($term) {
-  debug('test');
   // Assign the term name as the page title.
   drupal_set_title($term->name);
 
@@ -83,26 +77,12 @@ function humanitarianresponse_layout_taxonomy_term_page($term) {
     '#suffix' => '</div>',
     'term' => taxonomy_term_view($term, 'full'),
   );
-
-  /*if ($nids = taxonomy_select_nodes($term->tid, TRUE, variable_get('default_nodes_main', 10))) {
-    $nodes = node_load_multiple($nids);
-    $build += node_view_multiple($nodes);
-    $build['pager'] = array(
-      '#theme' => 'pager',
-      '#weight' => 5,
-     );
-  }
-  else {
-    $build['no_content'] = array(
-      '#prefix' => '<p>',
-      '#markup' => t('There is currently no content classified with this term.'),
-      '#suffix' => '</p>',
-    );
-  }*/
+  
   return $build;
 }
 
 
 function humanitarianresponse_layout_taxonomy_term_title($term) {
-  return $term->name;
+  return function_exists('i18n_taxonomy_term_name') ?
+      i18n_taxonomy_term_name($term) : taxonomy_term_title($term);
 }

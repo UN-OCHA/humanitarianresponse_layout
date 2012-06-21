@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ */
+ 
+/**
+ * Implements hook_install()
+ */
+function humanitarianresponse_layout_install() {
+  // Set module weight higher than i18n_taxonomy
+   db_update('system')
+    ->fields(array('weight' => 10))
+    ->condition('name', 'humanitarianresponse_layout')
+    ->execute();
+}
