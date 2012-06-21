@@ -48,6 +48,7 @@ function humanitarianresponse_layout_menu_alter(&$items) {
  *   The page content.
  */
 function humanitarianresponse_layout_taxonomy_term_page($term) {
+  debug('test');
   // Assign the term name as the page title.
   drupal_set_title($term->name);
 
