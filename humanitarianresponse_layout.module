@@ -40,6 +40,7 @@ function humanitarianresponse_layout_menu_alter(&$items) {
   //$items['taxonomy/term/%taxonomy_term']['title callback'] = 'humanitarianresponse_layout_taxonomy_term_title';
   $items['taxonomy/term/%taxonomy_term']['file'] = 'humanitarianresponse_layout.module';
   $items['taxonomy/term/%taxonomy_term']['module'] = 'humanitarianresponse_layout';
+  debug($items['taxonomy/term/%taxonomy_term']);
 }
 
 /**
