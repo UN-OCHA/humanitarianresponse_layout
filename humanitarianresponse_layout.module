@@ -37,6 +37,7 @@ function humanitarianresponse_layout_menu_alter(&$items) {
   }
 
   $items['taxonomy/term/%taxonomy_term']['page callback'] = 'humanitarianresponse_layout_taxonomy_term_page';
+  debug($items['taxonomy/term/%taxonomy_term']);
 }
 
 /**
