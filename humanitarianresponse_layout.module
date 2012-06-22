@@ -87,6 +87,7 @@ function humanitarianresponse_layout_taxonomy_term_page($term) {
 
 
 function humanitarianresponse_layout_taxonomy_term_title($term) {
-  return function_exists('i18n_taxonomy_term_name') ?
-      i18n_taxonomy_term_name($term) : taxonomy_term_title($term);
+  $name = entity_label('taxonomy_term', $term);
+  debug($name);
+  return $name;
 }
