@@ -13,20 +13,6 @@ function humanitarianresponse_layout_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_theme';
-  $strongarm->value = 'seven';
-  $export['admin_theme'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'logintoboggan_login_block_type';
-  $strongarm->value = '1';
-  $export['logintoboggan_login_block_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_button_option';
   $strongarm->value = 'stbc_';
   $export['sharethis_button_option'] = $strongarm;
@@ -79,41 +65,6 @@ function humanitarianresponse_layout_strongarm() {
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'index';
   $export['site_frontpage'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'superfish_menu_1';
-  $strongarm->value = 'main-menu:0';
-  $export['superfish_menu_1'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'superfish_shadow_1';
-  $strongarm->value = 0;
-  $export['superfish_shadow_1'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'superfish_style_1';
-  $strongarm->value = 'none';
-  $export['superfish_style_1'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'superfish_touch_1';
-  $strongarm->value = 1;
-  $export['superfish_touch_1'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'theme_default';
-  $strongarm->value = 'humanitarianresponse';
-  $export['theme_default'] = $strongarm;
 
   return $export;
 }
