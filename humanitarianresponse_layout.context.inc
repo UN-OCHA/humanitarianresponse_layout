@@ -43,7 +43,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'clusters';
   $context->description = 'When accessing a cluster taxonomy term';
-  $context->tag = '';
+  $context->tag = 'clusters';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -131,7 +131,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'clusters_all';
   $context->description = 'When accessing all pages within a cluster';
-  $context->tag = '';
+  $context->tag = 'clusters';
   $context->conditions = array(
     'path' => array(
       'values' => array(
