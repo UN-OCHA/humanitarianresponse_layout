@@ -315,19 +315,25 @@ function humanitarianresponse_layout_context_default_contexts() {
           'module' => 'views',
           'delta' => 'highlight-block_1',
           'region' => 'content',
-          'weight' => '3',
+          'weight' => '-10',
+        ),
+        'views-events-block_1' => array(
+          'module' => 'views',
+          'delta' => 'events-block_1',
+          'region' => 'content',
+          'weight' => '-9',
         ),
         'views-documents-block_per_term' => array(
           'module' => 'views',
           'delta' => 'documents-block_per_term',
           'region' => 'content',
-          'weight' => '4',
+          'weight' => '-8',
         ),
         'views-maps_view-block_1' => array(
           'module' => 'views',
           'delta' => 'maps_view-block_1',
           'region' => 'content',
-          'weight' => '5',
+          'weight' => '-7',
         ),
         'views-emergencies-block' => array(
           'module' => 'views',
@@ -335,9 +341,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
-        'views-news-block_1' => array(
+        'views-contacts-block_1' => array(
           'module' => 'views',
-          'delta' => 'news-block_1',
+          'delta' => 'contacts-block_1',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -347,9 +353,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
-        'views-contacts-block_1' => array(
+        'views-news-block_1' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'news-block_1',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
