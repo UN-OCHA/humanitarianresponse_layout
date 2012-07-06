@@ -295,6 +295,110 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'emergencies';
+  $context->description = '';
+  $context->tag = 'emergencies';
+  $context->conditions = array(
+    'taxonomy_term' => array(
+      'values' => array(
+        'emergencies' => 'emergencies',
+      ),
+      'options' => array(
+        'term_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-highlight-block_1' => array(
+          'module' => 'views',
+          'delta' => 'highlight-block_1',
+          'region' => 'content',
+          'weight' => '3',
+        ),
+        'views-documents-block_per_term' => array(
+          'module' => 'views',
+          'delta' => 'documents-block_per_term',
+          'region' => 'content',
+          'weight' => '4',
+        ),
+        'views-maps_view-block_1' => array(
+          'module' => 'views',
+          'delta' => 'maps_view-block_1',
+          'region' => 'content',
+          'weight' => '5',
+        ),
+        'views-emergencies-block' => array(
+          'module' => 'views',
+          'delta' => 'emergencies-block',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+        'views-news-block_1' => array(
+          'module' => 'views',
+          'delta' => 'news-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-links-block_1' => array(
+          'module' => 'views',
+          'delta' => 'links-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-contacts-block_1' => array(
+          'module' => 'views',
+          'delta' => 'contacts-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('emergencies');
+  $export['emergencies'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'emergencies_all';
+  $context->description = 'Defined in emergency subpages';
+  $context->tag = 'emergencies';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'emergencies/*' => 'emergencies/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-emergencies-block' => array(
+          'module' => 'views',
+          'delta' => 'emergencies-block',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Defined in emergency subpages');
+  t('emergencies');
+  $export['emergencies_all'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'events';
   $context->description = 'When accessing a node of type event';
   $context->tag = 'nodes';
