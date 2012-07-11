@@ -6,6 +6,7 @@ php = 5.2.4
 dependencies[] = boxes
 dependencies[] = context
 dependencies[] = context_breadcrumb_current_page
+dependencies[] = context_disable_context
 dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = facetapi
