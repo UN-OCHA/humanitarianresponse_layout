@@ -124,6 +124,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When accessing a cluster taxonomy term');
+  t('clusters');
   $export['clusters'] = $context;
 
   $context = new stdClass();
@@ -162,6 +163,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When accessing all pages within a cluster');
+  t('clusters');
   $export['clusters_all'] = $context;
 
   $context = new stdClass();
@@ -483,6 +485,88 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('When accessing a funding taxonomy term');
   $export['funding'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'home_page';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-media-media_home_slideshow' => array(
+          'module' => 'views',
+          'delta' => 'media-media_home_slideshow',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-documents-documents_home_rep' => array(
+          'module' => 'views',
+          'delta' => 'documents-documents_home_rep',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-maps_view-visuals_home' => array(
+          'module' => 'views',
+          'delta' => 'maps_view-visuals_home',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+        'views-documents-documents_home_feat' => array(
+          'module' => 'views',
+          'delta' => 'documents-documents_home_feat',
+          'region' => 'content',
+          'weight' => '-7',
+        ),
+        'views-clusters-block_1' => array(
+          'module' => 'views',
+          'delta' => 'clusters-block_1',
+          'region' => 'content',
+          'weight' => '-6',
+        ),
+        'views-documents-documents_home_key' => array(
+          'module' => 'views',
+          'delta' => 'documents-documents_home_key',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-news-news_home' => array(
+          'module' => 'views',
+          'delta' => 'news-news_home',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'boxes-home_calendar' => array(
+          'module' => 'boxes',
+          'delta' => 'home_calendar',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'boxes-home_cod' => array(
+          'module' => 'boxes',
+          'delta' => 'home_cod',
+          'region' => 'sidebar_second',
+          'weight' => '-7',
+        ),
+        'views-media-media_home_block' => array(
+          'module' => 'views',
+          'delta' => 'media-media_home_block',
+          'region' => 'sidebar_second',
+          'weight' => '-6',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['home_page'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
