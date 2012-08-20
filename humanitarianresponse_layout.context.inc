@@ -22,7 +22,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'assessment' => 'assessment',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
@@ -178,7 +178,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'contact' => 'contact',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
@@ -278,7 +278,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'document' => 'document',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
@@ -416,7 +416,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'event' => 'event',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
@@ -580,7 +580,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'humanitarian_profile' => 'humanitarian_profile',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
@@ -608,7 +608,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'map' => 'map',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
@@ -636,7 +636,7 @@ function humanitarianresponse_layout_context_default_contexts() {
         'news' => 'news',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
   );
