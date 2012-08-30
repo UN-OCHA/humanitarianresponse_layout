@@ -19,7 +19,7 @@ function humanitarianresponse_layout_default_box() {
   $box->description = 'Home Calendar';
   $box->options = array(
     'body' => array(
-      'value' => '<p><img alt="Calendar icon" src="/sites/all/themes/humanitarianresponse/images/calendar.png">See what\'s happening on our <a href="coordination/calendar">calendar of meetings and events</a></p>',
+      'value' => '<p><img alt="Calendar icon" src="/sites/all/themes/humanitarianresponse/images/calendar.png">Our <a href="coordination/calendar">calendar of meetings and events</a></p>',
       'format' => 'full_html',
     ),
     'i18n_boxes' => array(
@@ -38,7 +38,7 @@ function humanitarianresponse_layout_default_box() {
   $box->description = 'Home COD';
   $box->options = array(
     'body' => array(
-      'value' => '<p style="display: inline;"><img alt="COD icon" src="/sites/all/themes/humanitarianresponse/images/cod.png"></p><p style="margin-left: 50px;"><a href="visuals-data/visuals">Common and Fundamental Operational Data</a> (including GIS)</p>',
+      'value' => '<p style="display: inline;"><img alt="COD icon" src="/sites/all/themes/humanitarianresponse/images/cod.png"></p><p style="margin-left: 50px;"><a href="visuals-data/visuals">Common and Fundamental Operational Data</a></p>',
       'format' => 'full_html',
     ),
     'i18n_boxes' => array(
