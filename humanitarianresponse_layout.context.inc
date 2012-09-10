@@ -43,7 +43,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'clusters';
   $context->description = 'When accessing a cluster taxonomy term';
-  $context->tag = 'clusters';
+  $context->tag = 'taxonomy';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -124,7 +124,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When accessing a cluster taxonomy term');
-  t('clusters');
+  t('taxonomy');
   $export['clusters'] = $context;
 
   $context = new stdClass();
@@ -132,7 +132,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'clusters_all';
   $context->description = 'When accessing all pages within a cluster';
-  $context->tag = 'clusters';
+  $context->tag = 'taxonomy';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -163,7 +163,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When accessing all pages within a cluster');
-  t('clusters');
+  t('taxonomy');
   $export['clusters_all'] = $context;
 
   $context = new stdClass();
@@ -199,7 +199,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'coordination_hub';
   $context->description = 'When accessing a coordination hub taxonomy term';
-  $context->tag = '';
+  $context->tag = 'taxonomy';
   $context->conditions = array(
     'taxonomy_term' => array(
       'values' => array(
@@ -264,6 +264,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When accessing a coordination hub taxonomy term');
+  t('taxonomy');
   $export['coordination_hub'] = $context;
 
   $context = new stdClass();
@@ -298,8 +299,8 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'emergencies';
-  $context->description = '';
-  $context->tag = 'emergencies';
+  $context->description = 'When accessing an emergency taxonomy term';
+  $context->tag = 'taxonomy';
   $context->conditions = array(
     'taxonomy_term' => array(
       'values' => array(
@@ -343,9 +344,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
-        'views-contacts-block_1' => array(
+        'views-news-block_1' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'news-block_1',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -355,9 +356,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
-        'views-news-block_1' => array(
+        'views-contacts-block_1' => array(
           'module' => 'views',
-          'delta' => 'news-block_1',
+          'delta' => 'contacts-block_1',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -368,7 +369,8 @@ function humanitarianresponse_layout_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('emergencies');
+  t('When accessing an emergency taxonomy term');
+  t('taxonomy');
   $export['emergencies'] = $context;
 
   $context = new stdClass();
@@ -376,7 +378,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'emergencies_all';
   $context->description = 'Defined in emergency subpages';
-  $context->tag = 'emergencies';
+  $context->tag = 'taxonomy';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -401,7 +403,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Defined in emergency subpages');
-  t('emergencies');
+  t('taxonomy');
   $export['emergencies_all'] = $context;
 
   $context = new stdClass();
@@ -437,7 +439,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'funding';
   $context->description = 'When accessing a funding taxonomy term';
-  $context->tag = '';
+  $context->tag = 'taxonomy';
   $context->conditions = array(
     'taxonomy_term' => array(
       'values' => array(
@@ -484,6 +486,7 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('When accessing a funding taxonomy term');
+  t('taxonomy');
   $export['funding'] = $context;
 
   $context = new stdClass();
@@ -756,6 +759,117 @@ function humanitarianresponse_layout_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('On search pages');
   $export['search'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'themes';
+  $context->description = 'When accessing a theme taxonomy term';
+  $context->tag = 'taxonomy';
+  $context->conditions = array(
+    'taxonomy_term' => array(
+      'values' => array(
+        'themes' => 'themes',
+      ),
+      'options' => array(
+        'term_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-highlight-block_1' => array(
+          'module' => 'views',
+          'delta' => 'highlight-block_1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-events-block_1' => array(
+          'module' => 'views',
+          'delta' => 'events-block_1',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-documents-block_per_term' => array(
+          'module' => 'views',
+          'delta' => 'documents-block_per_term',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+        'views-maps_view-block_1' => array(
+          'module' => 'views',
+          'delta' => 'maps_view-block_1',
+          'region' => 'content',
+          'weight' => '-7',
+        ),
+        'views-themes-block' => array(
+          'module' => 'views',
+          'delta' => 'themes-block',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+        'views-contacts-block_1' => array(
+          'module' => 'views',
+          'delta' => 'contacts-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-links-block_1' => array(
+          'module' => 'views',
+          'delta' => 'links-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-news-block_1' => array(
+          'module' => 'views',
+          'delta' => 'news-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a theme taxonomy term');
+  t('taxonomy');
+  $export['themes'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'themes_all';
+  $context->description = 'Defined in themes subpages';
+  $context->tag = 'taxonomy';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'themes/*' => 'themes/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-themes-block' => array(
+          'module' => 'views',
+          'delta' => 'themes-block',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Defined in themes subpages');
+  t('taxonomy');
+  $export['themes_all'] = $context;
 
   return $export;
 }
