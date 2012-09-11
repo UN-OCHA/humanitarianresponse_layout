@@ -25,7 +25,7 @@ function humanitarianresponse_layout_default_box() {
     'i18n_boxes' => array(
       'language' => '__LOCALIZE__',
     ),
-    'additional_classes' => 'grid-2 alpha',
+    'additional_classes' => 'grid-2 alpha block-boxes-home',
   );
   $export['home_calendar'] = $box;
 
@@ -44,7 +44,7 @@ function humanitarianresponse_layout_default_box() {
     'i18n_boxes' => array(
       'language' => '__LOCALIZE__',
     ),
-    'additional_classes' => 'grid-2 omega',
+    'additional_classes' => 'grid-2 omega block-boxes-home',
   );
   $export['home_cod'] = $box;
 
