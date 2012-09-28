@@ -45,10 +45,12 @@ function humanitarianresponse_layout_context_default_contexts() {
   $context->description = 'When accessing a cluster taxonomy term';
   $context->tag = 'taxonomy';
   $context->conditions = array(
-    'path' => array(
+    'taxonomy_term' => array(
       'values' => array(
-        'clusters/*' => 'clusters/*',
-        '~clusters/*/*' => '~clusters/*/*',
+        'clusters' => 'clusters',
+      ),
+      'options' => array(
+        'term_form' => '0',
       ),
     ),
   );
@@ -598,6 +600,78 @@ function humanitarianresponse_layout_context_default_contexts() {
   t('When accessing a node of type humanitarian profile');
   t('nodes');
   $export['humanitarian_profiles'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'locations';
+  $context->description = 'When accessing a location taxonomy term';
+  $context->tag = 'taxonomy';
+  $context->conditions = array(
+    'taxonomy_term' => array(
+      'values' => array(
+        'locations' => 'locations',
+      ),
+      'options' => array(
+        'term_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-highlight-block_1' => array(
+          'module' => 'views',
+          'delta' => 'highlight-block_1',
+          'region' => 'content',
+          'weight' => '-35',
+        ),
+        'views-events-block_1' => array(
+          'module' => 'views',
+          'delta' => 'events-block_1',
+          'region' => 'content',
+          'weight' => '-30',
+        ),
+        'views-documents-block_per_term' => array(
+          'module' => 'views',
+          'delta' => 'documents-block_per_term',
+          'region' => 'content',
+          'weight' => '-25',
+        ),
+        'views-maps_view-block_1' => array(
+          'module' => 'views',
+          'delta' => 'maps_view-block_1',
+          'region' => 'content',
+          'weight' => '-20',
+        ),
+        'views-contacts-block_1' => array(
+          'module' => 'views',
+          'delta' => 'contacts-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-35',
+        ),
+        'views-links-block_1' => array(
+          'module' => 'views',
+          'delta' => 'links-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-30',
+        ),
+        'views-news-block_1' => array(
+          'module' => 'views',
+          'delta' => 'news-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-25',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('When accessing a location taxonomy term');
+  t('taxonomy');
+  $export['locations'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
