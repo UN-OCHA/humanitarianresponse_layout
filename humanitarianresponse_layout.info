@@ -12,6 +12,7 @@ dependencies[] = ctools
 dependencies[] = delta
 dependencies[] = empty_front_page
 dependencies[] = follow
+dependencies[] = hr_news_slideshow
 dependencies[] = humanitarianresponse_assessments
 dependencies[] = humanitarianresponse_contacts
 dependencies[] = humanitarianresponse_documents
