@@ -173,9 +173,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '10',
         ),
-        'views-contacts-block_1' => array(
+        'views-contacts-block_2' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'contacts-block_2',
           'region' => 'content',
           'weight' => '5',
         ),
@@ -250,9 +250,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '10',
         ),
-        'views-contacts-block_1' => array(
+        'views-contacts-block_2' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'contacts-block_2',
           'region' => 'content',
           'weight' => '5',
         ),
@@ -365,9 +365,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '10',
         ),
-        'views-contacts-block_1' => array(
+        'views-contacts-block_2' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'contacts-block_2',
           'region' => 'content',
           'weight' => '5',
         ),
@@ -515,9 +515,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '10',
         ),
-        'views-contacts-block_1' => array(
+        'views-contacts-block_2' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'contacts-block_2',
           'region' => 'content',
           'weight' => '5',
         ),
@@ -613,9 +613,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '10',
         ),
-        'views-contacts-block_1' => array(
+        'views-contacts-block_2' => array(
           'module' => 'views',
-          'delta' => 'contacts-block_1',
+          'delta' => 'contacts-block_2',
           'region' => 'content',
           'weight' => '5',
         ),
