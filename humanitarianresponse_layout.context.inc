@@ -411,9 +411,9 @@ function humanitarianresponse_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '-9',
         ),
-        'views-media-media_home_block' => array(
+        'views-media-block' => array(
           'module' => 'views',
-          'delta' => 'media-media_home_block',
+          'delta' => 'media-block',
           'region' => 'content_second',
           'weight' => '-10',
         ),
